@@ -1,0 +1,270 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<link href="bootstrap.css" rel="stylesheet">
+<script src="bootstrap.min.js"></script>
+
+<script>
+ $(function (){
+	$('#nektTabs a').click(function (e) {
+	  e.preventDefault();
+	  $(this).tab('show');
+	})
+    $('#myTab a:last').tab('show');
+});
+
+</script>
+</head>
+<body>
+<!-- Nav tabs -->
+<div style="width:20%;background-color:#F1F1F1;">
+<div style="">
+<div class="nektTitleBar">
+	<label class="nektTitle">Nekt</label>
+</div>
+
+<ul id="nektTabs" class="nav nav-tabs">
+      <li class="active"><a href="#nektHomeSpan" data-toggle="tab"><span class="homeicon"></span>Home</a></li>
+      <li><a href="#nektShowContactSpan" data-toggle="tab"><span class="dossiericon"></span>Dossier</a></li>
+      <li><a href="#nektAlertSpan" data-toggle="tab"><span class="alerticon"></span>Alert</a></li>
+</ul>
+</div>
+
+<div id="nektOrMailSideBar"class="tab-content">
+
+<!--Nekt Home panel starts here-->
+	<div id="nektHomeSpan" class="nektcontainer tab-pane active">
+	<ol>
+		<li class="nektNameSection boxShadow">
+			<div class='tab-content-info'>
+<span class="profile-img"></span>
+				<label class='homeHeading'>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  text ever since the 1500s.
+				</label>
+			</div>
+		</li>
+
+		<li><div class='tab-content-info'>
+			<ol class="nektQuikInfo">
+				<li class="nektPhoneNoumber boxShadow">
+					<div><span class="phoneIcon"></span>
+					<label id='nektprimaryPhone' placeholder='Phone Number' class='nektadd addc'>+91 9999 999 999  </label>
+					</div>
+<div>You have called on Nov 19, 2013.You have sent E-mail on Nov 19, 2013.</div>
+				</li>	
+			
+				<li class="nektEmailAddress boxShadow">					
+					<div><span class="emailIcon"></span>				
+					<label id='nektPrimaryTag' placeholder='Email Address'class='nektadd addc'> 				 		amala.shanthini@npcompete.net</label></div>
+					<div>You have sent E-mail on Nov 19, 2013.You have sent E-mail on Nov 19, 2013.</div> 
+				</li>
+					
+				<li class="nektMeetingInfo boxShadow">
+					<div><span class="meetingIcon"></span>
+					<label id='nektPrimaryCompanyHistory' placeholder='Meetings' class='nektadd addc'>Meetings
+					</label></div>
+					<div>You have sent E-mail on Nov 19, 2013.You have sent E-mail on Nov 19, 2013.</div> 
+				</li>
+					
+				<li class="nektText boxShadow">
+					<div><span class="textIcon"></span>
+					<label id='nektPrimaryEducationHistory' placeholder='text' class='nektadd addc'> Text Messages
+					</label></div>
+					<div>You have sent E-mail on Nov 19, 2013.You have sent E-mail on Nov 19, 2013.</div> 		
+				</li>
+			</ol>
+		</li>
+		
+		<li>
+			<div class ="tab-content-info boxShadow"> 
+				<label class='sectionTitle'><span class="simillerMsgIconSimilar"></span>Similler Messages</label>
+
+			<div id='nektSimilarMessageDetail' class='mess'>
+	<ol>
+		<li class=''>
+			<div class='simillerMsg-info'>
+			<span class="simillerMsg-img"></span>
+			<label class='simillerMsg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumtext 				ever since the 1500s.</label>
+			</div>
+		</li>
+		<li class=''>
+			<div class='simillerMsg-info'>
+			<span class="simillerMsg-img"></span>
+			<label class='simillerMsg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumtext 				ever since the 1500s.</label>
+			</div>
+		</li>
+		<li class=''>
+			<div class='simillerMsg-info'>
+			<span class="simillerMsg-img"></span>
+			<label class='simillerMsg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumtext 				ever since the 1500s.</label>
+			</div>
+		</li>
+		<li class=''>
+			<div class='simillerMsg-info'>
+			<span class="simillerMsg-img"></span>
+			<label class='simillerMsg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumtext 				ever since the 1500s.</label>
+			</div>
+		</li>
+	</ol>
+			</div>
+
+			</div>
+		</li>
+
+	</ol>
+	</div>
+	
+<!--Nekt Home panel Ends here-->
+
+<!--Nekt Dossier panel Ends here-->
+<div class="tab-pane nektcontainer" id="nektShowContactSpan"  data-toggle="tab">
+<ol>
+	<li class='nektNameSection'>
+			<div class='tab-content-info'>
+<span class="profile-img"></span>
+				<label class='homeHeading'>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  text ever since the 1500s.
+				</label>
+			</div>
+	</li>
+
+	
+	<li class='nektEmailSection'>
+	<div class=""><img class="nektAddressBookIcon" value="less" src=""><div class="">
+		<img class="nektEmailAddressIcon" value="less" src=""> <button id="nektadd" class="showspan">+</button>
+				<button id="nektmore" class="showspan" value="More">&#x25BC;</button>
+	<div id="moreDiv">
+	<div><input type="text" id="nektPrimaryEmail" placeholder="Email Address" class="nektshow"></div>
+	<div><input type="text" id="nektPrimaryEmail" placeholder="Email Address" class="nektshow"></div>		
+	</div>
+	</li>
+
+	<li class="nektPhoneSection"><div class="">
+		<img class="nektPhoneNumbersIcon" value="less" src=""> <button id="nektadd" class="showspan">+</button>
+				<button id='nektmore' class='showspan' value='More'>&#x25BC;</button>
+	<div id="moreDiv">
+	<div><input type="text" id="nektprimaryPhone" placeholder="Phone Number" class="nektshow"></div>
+	<div><input type="text" id="nektprimaryPhone" placeholder="Phone Number" class="nektshow"></div>
+	</div>
+	</li>
+
+	<li>
+	<div class ="tab-content-info"> 
+	<label class="sectionTitle"><span class="simillerMsgIconSimilar"></span>Personel Information</label>
+		<div id="nektpersonelMsgDetail" class="mess">
+		<ol>
+			<li class="">
+				<div class="personelMsg-info">
+				<span class="personelMsg-img">Name</span>
+				<label class="personelMsg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</label>
+				</div>
+			</li>
+			<li class="">
+				<div class="personelMsg-info">
+				<span class="personelMsg-img">Map Location</span>
+				<label class='simillerMsg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry..</label>
+				</div>
+			</li>
+			<li class="">
+				<div class="personelMsg-info">
+				<span class="personelMsg-img">Age</span>
+				<label class="personelMsg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</label>
+				</div>
+			</li>
+			<li class="">
+				<div class="personelMsg-info">
+				<span class="personelMsg-img">Gender</span>
+				<label class="personelMsg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</label>
+				</div>
+			</li>
+		</ol>
+		</div>
+
+	</div>
+	</li>
+
+	<li>
+	<div class ="tab-content-info"> 
+	<label class="sectionTitle"><span class="simillerMsgIconSimilar"></span>Events Information</label>
+		<div id="nektpersonelMsgDetail" class="mess">
+		<ol>
+			<li class="">
+				<div class="EventsMsg-info">
+				<span class="EventsMsg-img">Birth Day Celebration</span>
+				<label class="EventsMsg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</label>
+				</div>
+			</li>
+			<li class="">
+				<div class="EventsMsg-info">
+				<span class="EventsMsg-img">Happy Anniversary</span>
+				<label class="EventsMsg">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</label>
+				</div>
+			</li>
+			
+		</ol>
+		</div>
+
+	</div>
+	</li>
+
+
+
+
+</ol>
+</div>
+<!--Nekt Dossier panel Ends here-->
+
+<!--Nekt Alert panel Ends here-->
+<div class="tab-pane nektcontainer" id="nektAlertSpan"  data-toggle="tab">
+<ol>
+	<li class="">
+		<div class="">
+
+		<label class="">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  text ever since the 1500s.
+		</label>
+		</div>
+	</li>
+
+	<li>
+		<div class =""> 
+		<label class="">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  text ever since the 1500s. </label>
+		</div>
+	</li>
+
+	<li>
+		<div class =""> 
+		<label class="">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  text ever since the 1500s.</label>
+				
+		</div>
+	</li>
+
+		
+	<li>
+		<div class="">
+		<label class="">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  text ever since the 1500s.</label>
+		<div class='but-container'><a>Cancel</a> <a>Ok</a> </div>
+		</div>
+	</li>
+
+
+
+	</ol>
+	</div>
+<!--Nekt Alert panel Ends here-->
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+</body>
+</html>
