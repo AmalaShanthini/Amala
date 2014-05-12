@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var vag = ["onion","tomato","pototo"];
+var eatables = ["bread","parota","chilichiken"];
+
+function myFunction()
+{
+//var res = fruits.pop();
+//var res = fruits.push('grapes');
+//var children = hege.concat(stale,kai); 
+//var res = fruits.concat(vag,eatables);
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var res = fruits.splice(2,2,"lemon","kiwi");
+var x=document.getElementById("demo");
+x.innerHTML=res;
+}
+
+function fun_2()
+{
+var text = "";
+var obj = "";
+//var person={fname:"John",lname:"Doe",age:25}; 
+var obj = { name :"amala", street :"kdff", city:"chennai"};
+for(x in obj)
+	{
+		var text =text + obj[x];
+	}
+document.getElementById("disp").innerHTML = text;
+
+}
+</script>
+</head>
+
+<body>
+
+<p id="demo">Click the button to get array element.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+
+<button onclick="fun_2()">List of object</button>
+<span id="disp"></span>
+
+</body>
+</html>

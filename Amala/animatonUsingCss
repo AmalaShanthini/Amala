@@ -1,0 +1,8 @@
+http://webdesignerwall.com/trends/47-amazing-css3-animation-demos
+
+http://www.smashingmagazine.com/2008/12/09/50-really-useful-css-tools/
+
+
+setting multiple background for template
+===========================================
+background: rgb(22,55,85) url(../img/html.jpg) repeat-x 0 0;

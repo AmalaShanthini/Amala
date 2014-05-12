@@ -1,0 +1,83 @@
+<html>
+<head>
+ <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+
+  $( "#box" ).animate({
+    height: "300px",
+	width: "300px"
+  }, 5000, function() {
+    // Animation complete.
+  });
+
+
+function funadd(){
+	for(var i=1; i<300;)
+		{
+			var wid = i;
+			var hei = i;
+
+			console.log("inside fun");
+					console.log(wid);
+					console.log(hei);
+			var myElement = document.getElementById("box");
+				myElement.style.width = wid+'px';
+				myElement.style.height = hei+'px';
+			setTimeout(function () {
+				console.log("waiting for 3ms");
+			  }, 3000);
+			i++;
+
+		}
+funmin();
+cleartimeout();
+
+}	
+
+function funmin(){
+	for(var i=300; i<10;)
+		{
+			var wid = i;
+			var hei = i;
+
+			console.log("inside fun");
+					console.log(wid);
+					console.log(hei);
+			var myElement = document.getElementById("box");
+				myElement.style.width = wid+'px';
+				myElement.style.height = hei+'px';
+			
+			i--;
+
+		}
+	
+console.log("outside the fun");
+console.log(wid);
+console.log(hei);
+}
+
+function cleartimeout(){
+
+	clearTimeout(boxwid);
+}
+
+//funmin();
+var boxwid = setInterval(function(){funadd()}, 6000);
+</script>
+
+<style>
+#box
+{
+width:30px;
+height:30px;
+background-color:blue;
+}
+</style>
+</head>
+<body>
+<div id="box">
+</div>
+
+
+</body>
+</html>
